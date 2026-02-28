@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mmx_alu'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mul_8bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pmul'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mmx_alu_tb'

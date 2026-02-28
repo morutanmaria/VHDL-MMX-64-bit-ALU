@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jan 23 14:12:12 2026
+# Process ID: 8576
+# Current directory: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.runs/impl_1
+# Command line: vivado.exe -log mmx_basys.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mmx_basys.tcl -notrace
+# Log file: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.runs/impl_1/mmx_basys.vdi
+# Journal file: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.runs/impl_1\vivado.jou
+# Running On: Leptoput, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 16935 MB
+#-----------------------------------------------------------
+source mmx_basys.tcl -notrace

@@ -1,0 +1,35 @@
+Time resolution is 1 ps
+Note: --- TEST 1: PADD (08+01) ---
+Time: 60 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 1 Failed: PADD Carry flag not set.
+Time: 65 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Note: --- TEST 2: PSUB (00-01) ---
+Time: 135 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 2 Failed: PSUB result (00-01) not FF.
+Time: 135 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 2 Failed: PSUB Underflow flag not set.
+Time: 135 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Note: --- TEST 3: PAVG (15,7 -> 0b) ---
+Time: 205 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 3 Failed: PAVG result (FF+01) not 00.
+Time: 205 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Note: --- TEST 4: PINC (8 -> 9) ---
+Time: 275 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 4 Failed: PAVG result (FF+01) not 00.
+Time: 275 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Note: --- TEST 5: PDEC (0f->0e) ---
+Time: 345 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 5 Failed: PAVG result (FF+01) not 00.
+Time: 345 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Note: --- TEST 6: PMUL (Multi-Cycle 5*3=0F) ---
+Time: 415 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 6 Failed: DONE asserted too early.
+Time: 415 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 6 Failed: PMUL (Multi-Cycle) did not assert DONE.
+Time: 485 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 6 Failed: PMUL result (5*3) not 0F.
+Time: 485 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Error: Test 6 Failed: PMUL BUSY signal did not drop.
+Time: 485 ns  Iteration: 1  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd
+Note: --- MMX ALU Tests Complete ---
+Time: 505 ns  Iteration: 0  Process: /mmx_alu_tb/TEST_PROC  File: C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu_tb.vhd

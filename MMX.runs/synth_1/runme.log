@@ -1,0 +1,326 @@
+
+*** Running vivado
+    with args -log mmx_basys.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmx_basys.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mmx_basys.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 469.359 ; gain = 182.770
+Command: read_checkpoint -auto_incremental -incremental {C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/utils_1/imports/synth_1/mmx_basys.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/utils_1/imports/synth_1/mmx_basys.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mmx_basys -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1304.879 ; gain = 440.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mmx_basys' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_basys.vhd:17]
+INFO: [Synth 8-3491] module 'mmx_rom' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_rom.vhd:34' bound to instance 'rom_comp' of component 'mmx_rom' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_basys.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'mmx_rom' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_rom.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'mmx_rom' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_rom.vhd:39]
+INFO: [Synth 8-3491] module 'mmx_alu' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:26' bound to instance 'alu_comp' of component 'mmx_alu' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_basys.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mmx_alu' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:41]
+INFO: [Synth 8-3491] module 'padd' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/padd.vhd:26' bound to instance 'padd_comp' of component 'padd' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'padd' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/padd.vhd:35]
+WARNING: [Synth 8-614] signal 'ifcarry' is read in the process but is not in the sensitivity list [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/padd.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'padd' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/padd.vhd:35]
+INFO: [Synth 8-3491] module 'psub' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/psub.vhd:26' bound to instance 'psub_comp' of component 'psub' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'psub' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/psub.vhd:35]
+WARNING: [Synth 8-614] signal 'ifunder' is read in the process but is not in the sensitivity list [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/psub.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'psub' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/psub.vhd:35]
+INFO: [Synth 8-3491] module 'pavg' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pavg.vhd:34' bound to instance 'pavg_comp' of component 'pavg' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'pavg' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pavg.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'pavg' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pavg.vhd:42]
+INFO: [Synth 8-3491] module 'pdec' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pdec.vhd:34' bound to instance 'pdec_comp' of component 'pdec' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'pdec' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pdec.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'pdec' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pdec.vhd:41]
+INFO: [Synth 8-3491] module 'pinc' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pinc.vhd:34' bound to instance 'pinc_comp' of component 'pinc' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'pinc' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pinc.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'pinc' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pinc.vhd:41]
+INFO: [Synth 8-3491] module 'pmul' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:34' bound to instance 'pmul_comp' of component 'pmul' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'pmul' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:46]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_0' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'mul_8bit' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:17]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_1' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:73]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_2' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:83]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_3' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:93]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_4' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:103]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_5' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:113]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_6' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:123]
+INFO: [Synth 8-3491] module 'mul_8bit' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mul_8bit.vhd:5' bound to instance 'lane_7' of component 'mul_8bit' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'pmul' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/pmul.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'mmx_alu' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_alu.vhd:41]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/debouncer.vhd:5' bound to instance 'debouncer_addr' of component 'debouncer' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_basys.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/debouncer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/debouncer.vhd:14]
+INFO: [Synth 8-3491] module 'ssd' declared at 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/ssd.vhd:34' bound to instance 'display_comp' of component 'ssd' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_basys.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ssd' [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/ssd.vhd:42]
+INFO: [Synth 8-226] default block is never used [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/ssd.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ssd' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/ssd.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'mmx_basys' (0#1) [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/sources_1/new/mmx_basys.vhd:17]
+WARNING: [Synth 8-7129] Port SW[12] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module mmx_basys is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.246 ; gain = 552.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.246 ; gain = 552.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1417.246 ; gain = 552.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1417.246 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mmx_basys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mmx_basys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1515.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1515.352 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mul_8bit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                     run |                              010 |                               01
+                    done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mul_8bit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 9     
+	   3 Input    9 Bit       Adders := 9     
+	   2 Input    8 Bit       Adders := 24    
+	   3 Input    8 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 9     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	  16 Input   80 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 8     
+	   3 Input    8 Bit        Muxes := 16    
+	   3 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 21    
+	   3 Input    1 Bit        Muxes := 41    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port SW[12] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module mmx_basys is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module mmx_basys is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     2|
+|4     |LUT2   |    71|
+|5     |LUT3   |    41|
+|6     |LUT4   |    80|
+|7     |LUT5   |    38|
+|8     |LUT6   |    52|
+|9     |FDCE   |    41|
+|10    |FDRE   |   122|
+|11    |FDSE   |     8|
+|12    |IBUF   |     8|
+|13    |OBUF   |    19|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1515.352 ; gain = 552.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1515.352 ; gain = 650.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1515.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1515.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 12638622
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1515.352 ; gain = 1042.039
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1515.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Uni/An III/Semester I/Structure of Computer Systems/Lab/MMX/MMX.runs/synth_1/mmx_basys.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mmx_basys_utilization_synth.rpt -pb mmx_basys_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 23 14:12:03 2026...

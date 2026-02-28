@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../MMX.srcs/sources_1/new/mmx_alu.vhd" \
+"../../../../MMX.srcs/sources_1/new/mul_8bit.vhd" \
+"../../../../MMX.srcs/sources_1/new/padd.vhd" \
+"../../../../MMX.srcs/sources_1/new/pavg.vhd" \
+"../../../../MMX.srcs/sources_1/new/pdec.vhd" \
+"../../../../MMX.srcs/sources_1/new/pinc.vhd" \
+"../../../../MMX.srcs/sources_1/new/pmul.vhd" \
+"../../../../MMX.srcs/sources_1/new/psub.vhd" \
+"../../../../MMX.srcs/sources_1/new/mmx_alu_tb.vhd" \
+
+# Do not sort compile order
+nosort
