@@ -46,7 +46,7 @@ Getting Started
 
 Clone the Repository:
 
-git clone https://github.com/<your-username>/mmx_alu.git
+git clone https://github.com/morutanmaria/VHDL-MMX-64-bit-ALU.git
 
 Open the Project in Vivado:
 
