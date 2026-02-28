@@ -90,3 +90,11 @@ ALU produces correct packed SIMD results per operation.
 PMUL_BUSY signals active during multi-cycle multiplication.
 
 CARRY_OUT and UNDERFLOW_OUT accurately reflect arithmetic overflows/underflows.
+
+PADD: x"000000000000F0FF" + x"0000000000000101" =>
+Expected: x"000000000000F100"
+![IMG_20260122_171816_edit_100402631440448](https://github.com/user-attachments/assets/0987c21a-233b-494d-8bda-ea56713a9242)
+Simulation of pmul operation: 
+<img width="1067" height="438" alt="sim3" src="https://github.com/user-attachments/assets/6b5bc378-4597-4cb5-a713-c8403ce62779" />
+
+
