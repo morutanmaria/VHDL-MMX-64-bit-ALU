@@ -1,11 +1,11 @@
-Project Overview
+## Project Overview
 
 This project implements a simplified MMX (MultiMedia eXtension) Arithmetic Logic Unit in VHDL, targeting the Basys 3 FPGA (Artix-7) development board. The MMX ALU is designed to perform SIMD (Single Instruction, Multiple Data) operations, enabling multiple parallel arithmetic operations on packed integer data — a key feature for multimedia processing, such as image, audio, and video applications.
 
 The ALU supports a subset of MMX instructions, including PADD, PSUB, PMUL, PINC, PDEC, and PAVG, and provides mechanisms for control, status flags, and busy signals for multi-cycle operations like multiplication.
 Features
 
-Supported Operations:
+## Supported Operations:
 
 PADD (Packed Add): Parallel addition of multiple subword elements (bytes, words, doublewords).
 
@@ -24,7 +24,7 @@ Data Width: 64-bit MMX registers supporting SIMD-style computation.
 Control Signals: DONE flag, PMUL_BUSY signal, CARRY and UNDERFLOW flags for arithmetic checks.
 
 User Interface: Basys 3 switches for opcode selection, buttons for step-through ROM address selection, and 7-segment displays for result viewing.
-Design Components
+## Design Components
 
 MMX ALU: Core VHDL module implementing arithmetic operations.
 
@@ -35,14 +35,14 @@ Debouncer Module: Ensures clean button inputs for stepping through ROM addresses
 SSD (Seven-Segment Display) Driver: Displays selected portions of the ALU result.
 
 Top-Level Basys Integration: Connects ALU, ROM, debouncer, and display modules for full FPGA implementation.
-Requirements
+## Requirements
 
 FPGA Board: Basys 3 (Artix-7)
 
 Software: Xilinx Vivado 2023.x
 
 Hardware Description Language: VHDL
-Getting Started
+## Getting Started
 
 Clone the Repository:
 
@@ -60,7 +60,7 @@ Run synthesis, implementation, and generate bitstream.
 
 Connect Basys 3 board via USB and program the FPGA.
 
-Operating the System:
+## Operating the System:
 
 Use switches SW[15:13] to select the ALU opcode.
 
